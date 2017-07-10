@@ -11,8 +11,7 @@ app.get('/', function(req, res){
         ipaddress: req.headers['x-forwarded-for'],
         country: req.headers['x-region']
     };
-    //res.render('home', {data: data});
-    console.log(req.headers);
+    
     res.send(data);
     
 });
