@@ -8,8 +8,8 @@ app.get('/', function(req, res){
     var data = {
         software: req.headers['user-agent'],
         language: req.headers['accept-language'],
-        ipaddress: req.headers['x-forwarded-for'],
-        country: req.headers['x-region']
+        country: req.headers['x-region'],
+        ipaddress: req.headers['x-forwarded-for']
     };
     
     res.send(data);
